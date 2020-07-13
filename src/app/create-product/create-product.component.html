@@ -1,0 +1,16 @@
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+  <input type="hidden" formControlName="id">
+  <div class="form-group">
+    <label for="name">Name Product</label>
+    <input type="text" class="form-control" id="name" formControlName="name" placeholder="Enter Name">
+  </div>
+  <div class="form-group">
+    <label for="productCode">ProductCode</label>
+    <input type="text" class="form-control" id="productCode" formControlName="productCode" placeholder="Enter Product Code">
+  </div>
+  <div class="form-group">
+    <label class="form-check-label" for="comment">Comment</label>
+    <input type="text" class="form-control" id="comment" formControlName="comment">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
